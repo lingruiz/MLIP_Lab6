@@ -15,19 +15,14 @@ pipeline {
                 sh '''#!/bin/bash
                 echo 'Test Step: We run testing tool like pytest here'
 
-
                 # Create a virtual environment
-                # python3 -m venv lab6
+                python3 -m venv mlip
 
                 # Activate the virtual environment
                 source mlip/bin/activate
 
-                # Upgrade pip within the venv
-                # pip install --upgrade pip
-
-
-                # Install pytest
-                # pip install pytest pandas numpy scikit-learn
+                # Install dependencies 
+                pip install pytest numpy pandas scikit-learn
 
                 # run pytest
                 pytest
