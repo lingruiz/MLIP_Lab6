@@ -20,7 +20,7 @@ pipeline {
                 # python3 -m venv lab6
 
                 # Activate the virtual environment
-                # source mlip/bin/activate
+                source mlip/bin/activate
 
                 # Upgrade pip within the venv
                 # pip install --upgrade pip
