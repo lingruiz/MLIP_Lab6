@@ -39,3 +39,7 @@ def test_data_split(feature_target_sample):
     return_tuple = data_split(*feature_target_sample)
     # TODO test if the length of return_tuple is 4
     assert len(return_tuple)==4
+    assert return_tuple[0].shape[0]==return_tuple[2].shape[0]
+    assert return_tuple[1].shape[0]==return_tuple[3].shape[0]
+    assert return_tuple[0].shape[1]==return_tuple[1].shape[1]
+    assert return_tuple[2].shape[1]==return_tuple[3].shape[1]
