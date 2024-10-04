@@ -17,17 +17,17 @@ pipeline {
 
 
                 # Create a virtual environment
-                python3 -m venv lab6
+                # python3 -m venv lab6
 
                 # Activate the virtual environment
-                source lab6/bin/activate
+                # source mlip/bin/activate
 
                 # Upgrade pip within the venv
-                pip install --upgrade pip
+                # pip install --upgrade pip
 
 
                 # Install pytest
-                pip install pytest pandas numpy scikit-learn
+                # pip install pytest pandas numpy scikit-learn
 
                 # run pytest
                 pytest
